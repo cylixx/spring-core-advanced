@@ -1,2 +1,2 @@
 # spring-core-advanced
-spring core advance curse
+spring core advance course
