@@ -1,0 +1,13 @@
+create database springsecurity;
+
+CREATE TABLE IF NOT EXISTS user (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    active BOOLEAN NOT NULL DEFAULT FALSE,
+    password VARCHAR(25) NOT NULL,
+    roles VARCHAR(255) NOT NULL,
+    user_name VARCHAR(100) NOT NULL
+)  ENGINE=INNODB;
+
+
+insert into user(id, active, password, roles, user_name) values(1, 1, 'pass', 'ROLE_USER', 'user');
+insert into user(id, active, password, roles, user_name) values(2, 1, 'admin', 'ROLE_ADMIN', 'admin');
